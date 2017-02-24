@@ -2,7 +2,13 @@
 
 ## Introduction
 
-TBD
+Encrypted Message Protocol is a protocol that describes abstract structure of encrypted message that can be securely transfered between multiple compatible Software parts.
+
+It is not aimed to provide complete and strict requirements for Software rather than to provide a set of flexible yet precise agreements. The purpose of the protocol is to simplify the development of compatible software using encrypted messages to exchange data.
+
+## Warning
+
+While this document stays in draft state - any protocol backward compatibility is not guaranteed.
 
 ## Specification
 
@@ -33,19 +39,7 @@ It is **RECOMMENDED** to add signature block (_SIG_ block) within message, conta
 
 ### Reserved message block key names
 
-If message packing method uses key-value notation to separate data blocks then these keys **MUST** be called `alg` and `msg` for _ALG_ and _MSG_ blocks respectively. If _SIG_ block presented in key-value notated message than this block key **MUST** be called `sig`.
-
-Key names `alg`, `msg` and `sig` are reserved by protocol and **MUST** be used only to store data blocks as described in previous section. Example of JSON packed EMP message with custom Software defined blocks `sender` and `subject`:
-
-```json
-{
-  "alg": "RSA-SHA256",
-  "msg": "YJ73Pj8FTced....VwAE0zsN7CQg",
-  "sig": "Cs78Km+QYUjD....S5hJFR2ctlBA",
-  "sender": "bbrodriges",
-  "subject" "Project 47"
-}
-```
+If message packing method uses key-value notation to separate data blocks then these keys **MUST** be called `alg` and `msg` for _ALG_ and _MSG_ blocks respectively. If _SIG_ block presented in key-value notated message than this block key **MUST** be called `sig`. Key names `alg`, `msg` and `sig` are reserved by protocol and **MUST** be used only to store data blocks as described in previous section.
 
 ## Authors and attributions
 
