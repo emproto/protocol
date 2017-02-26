@@ -43,7 +43,7 @@ If message packing method uses key-value notation to separate data blocks then t
 
 ### Documentation
 
-Every protocol implementation **MUST** be followed by implementation documentation. It is **RECOMMENDED** to store documentation alongside with implementation source code in file named `IMPLEMENTATION`.
+Every protocol implementation **SHOULD** be followed by implementation documentation. It is **RECOMMENDED** to store documentation alongside with implementation source code in file named `IMPLEMENTATION`.
 
 ## Summary
 
