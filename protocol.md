@@ -1,14 +1,10 @@
-# Encrypted Message Protocol 1.0 Draft A
+# Encrypted Message Protocol 1.0
 
 ## Introduction
 
 Encrypted Message Protocol is a protocol that describes abstract structure of encrypted message that can be securely transfered between multiple compatible Software parts.
 
 It is not aimed to provide complete and strict requirements for Software rather than to provide a set of flexible yet precise agreements. The purpose of the protocol is to simplify the development of compatible software using encrypted messages to exchange data.
-
-## Warning
-
-While this document stays in draft state - any protocol backward compatibility is not guaranteed.
 
 ## Specification
 
@@ -52,7 +48,7 @@ Every protocol implementation **MUST** be followed by implementation documentati
 * Always specify message block algorithm in designated data block.
 * It is recommended to add signature data block into your message to increase safety.
 * Always provide documentation of data layout, supported cryptographic algorithms with their aliases, additional payload and message packing method.
-* If you use key-value data layout try to use reserved key for respected values to lower adoption complexity and increase interoperability.
+* If you use key-value data layout try to use reserved keys for respected values to lower adoption complexity and increase interoperability.
 
 ## Authors and attributions
 
